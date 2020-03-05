@@ -4,9 +4,13 @@ using namespace std;
 
 int main()
 {
-	int x1 = 10;
+	const int x1 = 10;
+	int x2 = 0;
+	x2 = 10 + 10;
+	int x3 = 20;
+
+
 	cout << x1 << endl;
-	x1 = x1 + 10;
-	cout << x1 << endl;
-	cout << x1--;
+	cout << x2 << endl;
+	cout << --x3 << endl;
 }
