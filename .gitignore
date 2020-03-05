@@ -40,3 +40,7 @@ Chapter 2/Task 3/.vs/Task 3/v16/.suo
 *.ipch
 *.filters
 *.suo
+*.ilk
+*.db-shm
+*.db-wal
+*.opendb
