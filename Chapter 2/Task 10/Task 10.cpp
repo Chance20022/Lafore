@@ -19,6 +19,6 @@ int main()
 
     Modpunds = ((shillings * 12) + pence) / 2.4;
 
-    cout << "Convert to modern pounds: " << pounds << Modpunds;
+    cout << "Decimal pounds: " << pounds << "." << Modpunds+1;
 
 }
