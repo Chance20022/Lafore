@@ -2,43 +2,31 @@
 
 using namespace std;
 
-float operation1(float x1, char op, float x2) {
-
-    float x = 0;
-
-    if (op == '/') {
-        x = x1 / x2;
-        return x;
-    }
-    else {
-        cout << "Bullshit with operation";
-        return false;
-    }
-
-}
-
 int main()
 {
-    float x1 = 0;
+    float a = 0;
     char op = ' ';
-    float x2 = 0;
+    float b = 0;
+    float c = 0;
+    float d = 0;
+    float sum1 = 0;
+    float sum2 = 0;
+
     cout << "Inter the first fraction:";
-    cin >> x1 >> op >> x2;
-
-    float sum1 = operation1(x1, op, x2);
-
+    cin >> a >> op >> b;
     cout << "Enter the second fraction:";
-    cin >> x1 >> op >> x2;
+    cin >> c >> op >> d;
 
-    float sum2 = operation1(x1, op, x2);
-
-    x1 = sum1 + sum2;
-
-    for (int i = 0; true; i++) {
-        if (x1 - static_cast<int>(x1) != 0) {
-
-        }
+    if (op != '/') {
+        cout << "Bullshit";
+        return 0;
+    }
+    else {
+        sum1 = ((a * d) + (b * c));
+        sum2 = (b * d);
+        cout << "Amount equal = " << sum1 << "/" << sum2;
+        
     }
 
-    cout << "Sum = " << x1;
+    return 0; 
 }
