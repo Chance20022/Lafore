@@ -2,12 +2,6 @@
 
 using namespace std;
 
-// Да бл, опять эти фунты
-// ((shillings * 12) + pence) / 2.4
-/*  pence in mill = shillings * 12
-     = aaa + pence 
-    aaa1 / 2.4 */
-
 int main()
 {
     float x1 = 0, x2 = 0;
