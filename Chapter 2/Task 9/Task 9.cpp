@@ -34,5 +34,11 @@ int main()
 
     x1 = sum1 + sum2;
 
+    for (int i = 0; true; i++) {
+        if (x1 - static_cast<int>(x1) != 0) {
+
+        }
+    }
+
     cout << "Sum = " << x1;
 }
