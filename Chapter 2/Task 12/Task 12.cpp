@@ -4,15 +4,17 @@ using namespace std;
 
 int main()
 {
-    float x1 = 0, x2 = 0;
-    float pence = 0;
+    float decpounds = 0; //Сумма в десятичных фунтах
+    int pounds = 0;      //Сумма в старых фунтах
+    float decfrac = 0;   //Десятичная дробная часть
 
-    cout << "Enter pounds: ";
-    cin >> x1;
-    cout << "Enter pence: ";
-    cin >> x2;
+    cout << "Enter decimal pounds: ";
+    cin >> decpounds;
 
-    pence = (x2 * 2.4) / 12;
+    pounds = static_cast<int>(decpounds);
 
-    cout << "Your ponds: " << x1 << "." << pence + 0.1;
+    decfrac = (decpounds - pounds) * 20;
+
+    cout << "Equivalent amount in the old notation: " << pounds << "." << decfrac << endl;
+
 }
