@@ -4,6 +4,10 @@ using namespace std;
 
 int main()
 {
-    // пока не знаю. Нужно подумать
-    std::cout << "Hello World!\n";
+    char a;
+    int b;
+    cout << "Enter letter: ";
+    cin >> a;
+    b = islower(a);
+    cout << b;
 }
