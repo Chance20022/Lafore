@@ -1,20 +1,25 @@
 ﻿#include <iostream>
 
-using namespace std;
+int main() {
+    double new_funts , x1;
+    //скопипастил
 
-int main()
-{
-    float decpounds = 0; //Сумма в десятичных фунтах
-    int pounds = 0;      //Сумма в старых фунтах
-    float decfrac = 0;   //Десятичная дробная часть
+    std::cin >> new_funts;
 
-    cout << "Enter decimal pounds: ";
-    cin >> decpounds;
+    std::cout
+        << "Old Funts: " << static_cast<int>(new_funts) << " Old Sillings: "
+        << static_cast<int>(
+        (new_funts - static_cast<double>(static_cast<int>(new_funts))) *
+            20)
+        << " Old Pens: ";
+         x1 = static_cast<int>(
+        (((new_funts - static_cast<double>(static_cast<int>(new_funts))) *
+            20) -
+            static_cast<int>((new_funts - static_cast<double>(
+                static_cast<int>(new_funts))) *
+                20)) *
+            12);
+         std::cout << x1;
 
-    pounds = static_cast<int>(decpounds);
-
-    decfrac = (decpounds - pounds) * 20;
-
-    cout << "Equivalent amount in the old notation: " << pounds << "." << decfrac << endl;
-
+    return 0;
 }
