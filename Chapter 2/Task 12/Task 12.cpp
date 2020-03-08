@@ -1,25 +1,21 @@
 ﻿#include <iostream>
 
+using namespace std;
+
 int main() {
-    double new_funts , x1;
-    //скопипастил
+    double NewPounds;
+    double x;
 
-    std::cin >> new_funts;
+    cin >> NewPounds;
 
-    std::cout
-        << "Old Funts: " << static_cast<int>(new_funts) << " Old Sillings: "
-        << static_cast<int>(
-        (new_funts - static_cast<double>(static_cast<int>(new_funts))) *
-            20)
-        << " Old Pens: ";
-         x1 = static_cast<int>(
-        (((new_funts - static_cast<double>(static_cast<int>(new_funts))) *
-            20) -
-            static_cast<int>((new_funts - static_cast<double>(
-                static_cast<int>(new_funts))) *
-                20)) *
-            12);
-         std::cout << x1;
+    x = NewPounds - static_cast<int>(NewPounds); // отсекаю франки, так как они не меняются
+    x = x * 2.4; /*Остаются пенси и я перевожу их в старую денежную систему. 
+                 В новой денежной системе 1 фунт равен 100 пенсам, а в старой системе 1 фунт = 20х12 = 240
+                 По другому можно понять, что старая денежная реформа в 2.4 меньше, чем новая. В данном случае,
+                 я перевожу из новых в старые пенси, значит мне нужно умножить на 2.4*/
+    x = x / 12; // как мы знаем из 10 задания, пенси не могут быть бльше 12, потому что дальше по идут шиллинги
+                // Поэтому мы должны узнать, сколько шиллингов в пенси. Т.е делить на 12
+
 
     return 0;
 }
