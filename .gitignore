@@ -44,3 +44,4 @@ Chapter 2/Task 3/.vs/Task 3/v16/.suo
 *.db-shm
 *.db-wal
 *.opendb
+*.vcxitems
