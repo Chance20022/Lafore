@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -12,8 +13,8 @@ int main()
 
     cout << endl;
 
-    for (int i = 1, counter = 10; i < 200; i++) {
-        cout << i * number;
+    for (int i = 1, counter = 10; i < 201; i++) {
+        cout << setw (7) << i * number;
         if (i == counter) {
             cout << endl;
             counter = counter + 10;
