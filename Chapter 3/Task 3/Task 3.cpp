@@ -8,9 +8,18 @@ int main()
     char simv;
     long number = 0;
 
-    simv = getche(); // Я не знаю, не работает
+    cout << "Enter your number: ";
 
-    number = number * 10 + simv - '0';
+    for (int i = 0; i < 6; i++) {
 
-    cout << number;
+        simv = _getche();
+
+        number = number * 10 + simv - '0';
+
+    }
+
+    cout << endl;
+    cout << "You war write the number: " << number;
+  
+
 }
