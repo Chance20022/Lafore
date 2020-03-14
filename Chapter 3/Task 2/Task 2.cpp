@@ -23,7 +23,7 @@ int main()
     case '1':
         cout << "Enter Celsius temperature: ";
         cin >> number;
-        cout << "Value of Celsius: " << number * 1.8 + 32;
+        cout << "Value of Fahrenheit: " << number * 1.8 + 32;
         break;
     default:
         break;
