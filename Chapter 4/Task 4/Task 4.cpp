@@ -17,7 +17,8 @@ int main()
     cout << "Insert number and money the second employee: ";
     cin >> people2.numb >> people2.money;
     cout << "Insert number and money the third employee: ";
-    cin >> people3.numb >> people3.money << endl;
+    cin >> people3.numb >> people3.money;
+    cout << endl;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     cout << "Employee " << people1.numb << " has benefit " << people1.money << endl;
     cout << "Employee " << people2.numb << " has benefit " << people2.money << endl;
