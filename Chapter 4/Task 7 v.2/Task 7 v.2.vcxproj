@@ -20,11 +20,10 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{82A8B73E-82D2-4071-B418-217C6FFDDA3B}</ProjectGuid>
+    <ProjectGuid>{DD177756-8576-4FF1-8039-710AD5DC69C8}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Task7</RootNamespace>
+    <RootNamespace>Task7v2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Task 7 v.1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -148,7 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Task 7.cpp" />
+    <ClCompile Include="Task 7 v.2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

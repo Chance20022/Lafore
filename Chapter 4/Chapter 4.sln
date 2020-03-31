@@ -17,7 +17,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task 5", "Task 5\Task 5.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task 6", "Task 6\Task 6.vcxproj", "{4E123B2A-77FB-4F0E-96A1-4EA742E1DCBC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task 7", "Task 7\Task 7.vcxproj", "{82A8B73E-82D2-4071-B418-217C6FFDDA3B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task 7 v.1", "Task 7\Task 7.vcxproj", "{82A8B73E-82D2-4071-B418-217C6FFDDA3B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task 8", "Task 8\Task 8.vcxproj", "{58200DE1-E070-48F8-9BB2-767A1E08868F}"
 EndProject
@@ -27,7 +27,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task_10", "Task_10\Task_10.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task_11", "Task_11\Task_11.vcxproj", "{874ADAA1-AC63-4EAA-B92D-A88737EE813B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task 12", "Task 12\Task 12.vcxproj", "{90253291-D03F-4A08-BE02-CA1EB621710B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task_12", "Task 12\Task 12.vcxproj", "{90253291-D03F-4A08-BE02-CA1EB621710B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task 7 v.2", "Task 7 v.2\Task 7 v.2.vcxproj", "{DD177756-8576-4FF1-8039-710AD5DC69C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -133,6 +135,14 @@ Global
 		{90253291-D03F-4A08-BE02-CA1EB621710B}.Release|x64.Build.0 = Release|x64
 		{90253291-D03F-4A08-BE02-CA1EB621710B}.Release|x86.ActiveCfg = Release|Win32
 		{90253291-D03F-4A08-BE02-CA1EB621710B}.Release|x86.Build.0 = Release|Win32
+		{DD177756-8576-4FF1-8039-710AD5DC69C8}.Debug|x64.ActiveCfg = Debug|x64
+		{DD177756-8576-4FF1-8039-710AD5DC69C8}.Debug|x64.Build.0 = Debug|x64
+		{DD177756-8576-4FF1-8039-710AD5DC69C8}.Debug|x86.ActiveCfg = Debug|Win32
+		{DD177756-8576-4FF1-8039-710AD5DC69C8}.Debug|x86.Build.0 = Debug|Win32
+		{DD177756-8576-4FF1-8039-710AD5DC69C8}.Release|x64.ActiveCfg = Release|x64
+		{DD177756-8576-4FF1-8039-710AD5DC69C8}.Release|x64.Build.0 = Release|x64
+		{DD177756-8576-4FF1-8039-710AD5DC69C8}.Release|x86.ActiveCfg = Release|Win32
+		{DD177756-8576-4FF1-8039-710AD5DC69C8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
