@@ -10,13 +10,13 @@ struct date {
 
 int main()
 {
-    date date, mem;
+    date date;
     char ch = '/';
 
     cout << "Enter days/month/year: ";
     cin >> date.days >> ch >> date.month >> ch >> date.year;
 
-    mem = { {date.days}, {date.month}, {date.year} };
+    date = { {date.days}, {date.month}, {date.year} };
 
-    cout << mem.days << ch << mem.month << ch << mem.year;
+    cout << date.days << ch << date.month << ch << date.year;
 }

@@ -19,7 +19,7 @@ int main()
 
     cin >> phone2.CityCode >> phone2.stationNum >> phone2.numberAb;
 
-    cout << "My number (" << phone1.CityCode << ") " << phone1.numberAb << "-" << phone1.numberAb << endl;
-    cout << "My number (" << phone2.CityCode << ") " << phone2.numberAb << "-" << phone2.numberAb << endl;
+    cout << "My number (" << phone1.CityCode << ") " << phone1.stationNum << "-" << phone1.numberAb << endl;
+    cout << "My number (" << phone2.CityCode << ") " << phone2.stationNum << "-" << phone2.numberAb << endl;
 
 }
