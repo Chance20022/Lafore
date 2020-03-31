@@ -22,10 +22,10 @@ int main()
         cout << "Your answer: " << (a * d) - (b * c) << "/" << (b * d) << " or " << ab - (c / d);
         break;
     case '*':
-        cout << "Your answer: " << (a * d) * (b * c) << "/" << (b * d) << " or " << ab * (c / d);
+        cout << "Your answer: " << (a * c) << "/" << (b * d) << " or " << ab * (c / d);
         break;
     case '/':
-        cout << "Your answer: " << (a * d) / (b * c) << "/" << (b * d) << " or " << ab / (c / d);
+        cout << "Your answer: " << (a * d) << "/" << (c * b) << " or " << ab / (c / d);
         break;
     default:
         cout << "Error!";
