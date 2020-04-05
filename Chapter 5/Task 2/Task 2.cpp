@@ -16,7 +16,7 @@ int main()
     int p = ch - '0';
     cout << endl;
 
-    if (p == '\r')
+    if (p == -35 || p == -16)
         n = power(n);
     else
         n = power(n, p);
