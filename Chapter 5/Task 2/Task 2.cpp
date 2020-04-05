@@ -1,4 +1,6 @@
-﻿#include <iostream>
+﻿// Минус заключается в том, что возможно возвести в степень только от 1 до 9
+
+#include <iostream>
 #include <conio.h>
 
 using namespace std;
@@ -12,11 +14,11 @@ int main()
 
     cout << "Enter the number and degree of erection" << endl;
     cout << "The number: "; cin >> n;
-    cout << "The degree of erection: "; ch = _getche();
+    cout << "The degree of erection: "; ch = _getche(); // для того, чтобы считывать при вводе пробел и enter в консоли
     int p = ch - '0';
     cout << endl;
 
-    if (p == -35 || p == -16)
+    if (p == -35 || p == -16) // Чтобы исключить пробел и enter
         n = power(n);
     else
         n = power(n, p);
