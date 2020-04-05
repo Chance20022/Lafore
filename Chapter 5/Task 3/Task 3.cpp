@@ -11,19 +11,20 @@ int main()
     cout << "Enter two number: ";
     cin >> first >> second;
 
+    if (first == second) {
+        cout << "The numbers are equal";
+        return 0; 
+    }
+
     zeroSmaller(first, second);
+
+    cout << first << " and " << second;
 }
 
 void zeroSmaller(int& x, int& y) {
 
-    if (x < y) {
+    if (x < y)
         x = 0;
-        cout << x << " and " << y;
-    }
-    else if (x == y)
-        cout << "X == Y";
-    else {
+    else
         y = 0;
-        cout << x << " and " << y;
-    }
 }
