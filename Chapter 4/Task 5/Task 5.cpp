@@ -16,7 +16,5 @@ int main()
     cout << "Enter days/month/year: ";
     cin >> date.days >> ch >> date.month >> ch >> date.year;
 
-    date = { {date.days}, {date.month}, {date.year} };
-
     cout << date.days << ch << date.month << ch << date.year;
 }
