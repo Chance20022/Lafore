@@ -2,6 +2,7 @@
 
 using std::cout;
 using std::cin;
+using std::endl;
 
 struct time {
     int hour;
@@ -15,14 +16,22 @@ int main()
 {
     time time;
     char ch = '/';
+    cout << "If you want to leave enter 0/0/0" << endl;
 
-    cout << "Enter your time (hours/minutes/senconds): ";
-    cin >> time.hour >> ch >> time.minute >> ch >> time.second;
+    while (1) {
 
-    long sec = seconds(time);
+        cout << "Enter your time (hours:minutes:senconds): ";
+        cin >> time.hour >> ch >> time.minute >> ch >> time.second;
 
-    cout << "Your time in second: " << sec;
+        if (time.hour == 0 && time.minute == 0 && time.second == 0)
+            break;
 
+        long sec = seconds(time);
+
+        cout << "Your time in second: " << sec << endl;
+    }
+
+    return 0;
 }
 
 long seconds(time x) {
