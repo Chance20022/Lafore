@@ -46,3 +46,6 @@ Chapter 2/Task 3/.vs/Task 3/v16/.suo
 *.opendb
 *.vcxitems
 *.txt
+*.json
+*.json
+*.sqlite
