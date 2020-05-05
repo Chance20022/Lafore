@@ -33,7 +33,9 @@ int main()
 
 	d1 = oper(d1, d2);
 
-	cout << "Largest numbers: " << d1.feet << "." << d1.inches;
+	cout << "1) Largest numbers: " << d1.feet << "." << d1.inches;
+
+	return 0;
 }
 
 Distance oper(Distance x, Distance y) {

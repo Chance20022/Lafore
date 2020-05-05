@@ -46,7 +46,8 @@ void fiba1(int& x) {
     mult = x;
 }
 
-void fiba2(int& x) {
+void fiba2(int& x) { // Лучше, ведь в дальнейшем мы сможем создавать переменные с такими же именами и не будет внепланного вторжения в наши переменные
+                     // данной функции
     static int memo = 0;
     static int multi = 1;
     static int count = 1;

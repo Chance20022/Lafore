@@ -14,11 +14,11 @@ int main()
 
     cout << "Enter the number and degree of erection" << endl;
     cout << "The number: "; cin >> n;
-    cout << "The degree of erection: "; ch = _getche(); // для того, чтобы считывать при вводе пробел и enter в консоли
+    cout << "The degree of erection: "; ch = _getche(); // для того, чтобы не считывать при вводе пробел и enter в консоли
     int p = ch - '0';
     cout << endl;
 
-    if (p == -35 || p == -16) // Чтобы исключить пробел и enter и p не будет иметь число, которое мы не хотим (т.е. по умолчанию будет 2).
+    if (p == -35 || p == -16) // Чтобы исключить пробел и enter. p не будет иметь число, которое мы не хотим (т.е. по умолчанию будет 2 по умолчанию).
         n = power(n);
     else
         n = power(n, p);
