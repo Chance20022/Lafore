@@ -19,6 +19,9 @@ int main()
 
     Modpunds = ((shillings * 12) + pence) / 2.4;
 
-    cout << "Decimal pounds: " << pounds << "." << Modpunds+1;
+    if (Modpunds != 0)
+        Modpunds++;
+        
+    cout << "Decimal pounds: " << pounds << "." << Modpunds;
 
 }
