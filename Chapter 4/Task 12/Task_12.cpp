@@ -27,7 +27,7 @@ int main()
         cout << "Your answer: " << (a.a * b.a) << "/" << (a.b * b.b);
         break;
     case '/':
-        cout << "Your answer: " << (a.a / b.b) << "/" << (a.b / b.a);
+        cout << "Your answer: " << (a.a / b.a) << "/" << (a.b / b.b);
         break;
     default:
         cout << "Error!";
