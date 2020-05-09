@@ -6,9 +6,11 @@ using std::endl;
 
 class date {
 private:
+
 	int day;
 	int month;
 	int year;
+
 public:
 
 	void getdate(int a, int b, int c) {
