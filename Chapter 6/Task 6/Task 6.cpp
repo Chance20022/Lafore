@@ -22,7 +22,7 @@ public:
 	}
 
 	void showdate() {
-		cout << "The employment date: " << month << "/" << day << "/" << year << endl;
+		cout << " The employment date: " << month << "/" << day << "/" << year << endl << endl;
 	}
 };
 
@@ -69,22 +69,22 @@ public:
 	void display() {
 		switch (type) {
 		case laborer:
-			cout << " The number:" << numb << endl <<" The salary: " << money << endl << " The position: laborer " << endl << endl;
+			cout << " The number:" << numb << endl <<" The salary: " << money << endl << " The position: laborer " << endl;
 			break;
 		case secretary:
-			cout << " The number:" << numb << endl << " The salary: " << money << endl << " The position: secretary " << endl << endl;
+			cout << " The number:" << numb << endl << " The salary: " << money << endl << " The position: secretary " << endl;
 			break;
 		case manager:
-			cout << " The number:" << numb << endl << " The salary: " << money << endl << " The position: manager " << endl << endl;
+			cout << " The number:" << numb << endl << " The salary: " << money << endl << " The position: manager " << endl;
 			break;
 		case accountant:
-			cout << " The number:" << numb << endl << " The salary: " << money << endl << " The position: accountant " << endl << endl;
+			cout << " The number:" << numb << endl << " The salary: " << money << endl << " The position: accountant " << endl;
 			break;
 		case executive:
-			cout << " The number:" << numb << endl << " The salary: " << money << endl << " The position: executive " << endl << endl;
+			cout << " The number:" << numb << endl << " The salary: " << money << endl << " The position: executive " << endl;
 			break;
 		case researcher:
-			cout << " The number:" << numb << endl << " The salary: " << money << endl << " The position: researcher " << endl << endl;
+			cout << " The number:" << numb << endl << " The salary: " << money << endl << " The position: researcher " << endl;
 			break;
 		}
 	}
