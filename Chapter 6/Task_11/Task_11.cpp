@@ -7,54 +7,53 @@ using std::endl;
 
 class fraction {
 private:
-    int num;
-    int den;
-    char ch;
-    char op;
+    int num, den;
 public:
-    fraction() : num(0), den(0), ch('/')
-    {    /*   */    }
 
     void cin_data() {
-        cin >> num >> ch >> den;
+        char c;
+
+        cin >> num >> c >> den;
     }
 
-    void cin_char() {
-        cin >> op;
+    fraction fadd(fraction x) {
+        fraction temp;
+
+        temp.num = (num * x.den) + (x.num * den);
+        temp.den = den * x.den;
+
+        return temp;
+    }
+    fraction fsub(fraction x) {
+        fraction temp;
+
+        temp.num = (num * x.den) - (x.num * den);
+        temp.den = den * x.den;
+
+        return temp;
+    }
+    fraction fmul(fraction x) {
+        fraction temp;
+
+        temp.num = num * x.num;
+        temp.den = den * x.den;
+
+        return temp;
+    }
+    fraction fdiv(fraction x) {
+        fraction temp;
+
+        temp.num = num * x.den;
+        temp.den = den * x.num;
+
+        return temp;
     }
 
-    fraction operation(fraction x) {
-
-        switch (op) {
-        case'+':
-            x.num = (num * x.den) + (x.num * den);
-            x.den = den * x.den;
-            x.lowterms();
-            return x;
-        case'-':
-            x.num = (num * x.den) - (x.num * den);
-            x.den = den * x.den;
-            x.lowterms();
-            return x;
-        case'*':
-            x.num = num * x.num;
-            x.den = den * x.den;
-            x.lowterms();
-            return x;
-        case'/':
-            x.num = num * x.den;
-            x.den = den * x.num;
-            x.lowterms();
-            break;
-        }
-
-    }
+    void lowterms();
 
     void display() {
         cout << "Your answer: " << num << "/" << den;
     }
-
-    void lowterms();
 };
 
 int main()
@@ -65,12 +64,34 @@ int main()
     cout << "Enter the first fraction: ";
     f1.cin_data();
     cout << "Enter the operation: ";
-    f1.cin_char();
+    cin >> op;
     cout << "Enter the second fraction: ";
     f2.cin_data();
 
-    answer = f1.operation(f2);
-    answer.display();
+    switch (op) {
+    case'+':
+        answer = f1.fadd(f2);
+        answer.lowterms();
+        answer.display();
+        break;
+    case'-':
+        answer = f1.fsub(f2);
+        answer.lowterms();
+        answer.display();
+        break;
+    case'*':
+        answer = f1.fmul(f2);
+        answer.lowterms();
+        answer.display();
+        break;
+    case'/':
+        answer = f1.fdiv(f2);
+        answer.lowterms();
+        answer.display();
+        break;
+    }
+
+    return 0;
 }
 
 void fraction::lowterms() {
