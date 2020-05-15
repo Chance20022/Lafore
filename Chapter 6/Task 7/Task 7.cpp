@@ -6,9 +6,9 @@ using std::endl;
 
 class angle {
 private:
-    int grLa; //широта
-    float minLa; //ширина
-    char chLa; // ширина
+    int grLa;
+    float minLa; 
+    char chLa; 
 public:
 
     angle() : grLa(0), minLa(0), chLa(0)
