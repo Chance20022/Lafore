@@ -15,7 +15,7 @@ public:
     }
 
     void cout_data() {
-        cout << x << ": ";
+        cout << x << endl;
     }
 };
 
@@ -86,14 +86,14 @@ int main()
 
     cout << "The ship number ";
     s1.display();
-    cout << endl;
+    cout << endl << endl;
 
     cout << "The ship number ";
     s2.display();
-    cout << endl;
+    cout << endl << endl;
 
     cout << "The ship number ";
     s3.display();
-    cout << endl;
+    cout << endl << endl;
 
 }
