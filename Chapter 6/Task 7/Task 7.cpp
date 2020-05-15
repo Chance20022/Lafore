@@ -6,18 +6,15 @@ using std::endl;
 
 class angle {
 private:
-    int grLo; //долгота
     int grLa; //широта
-    float minLo; //долгота
     float minLa; //ширина
-    char chLo; //долгота
     char chLa; // ширина
 public:
 
-    angle() : grLo(0), grLa(0), minLo(0), minLa(0), chLo(0), chLa(0)
+    angle() : grLa(0), minLa(0), chLa(0)
     {    /*   */    }
 
-    void cin_La(int x, float y, char z) {
+    void cin_data(int x, float y, char z) {
 
         grLa = x;
         minLa = y;
@@ -25,16 +22,8 @@ public:
 
     }
 
-    void cin_Lo(int x, float z, char c) {
-
-        grLo = x;
-        minLo = z;
-        chLo = c;
-
-    }
-
     void cout_data() {
-        cout << "Your latitude and longitude: " << grLa << '\xF8' << minLa << "' " << chLa << ", " << grLo << '\xF8' << minLo << "' " << chLo << endl << endl;
+        cout << grLa << '\xF8' << minLa << "' " << chLa << " ";
     }
 
 };
@@ -45,18 +34,25 @@ int main()
     float min = 0;
     char ch = ' ';
 
-    angle a;
+    angle la, lo;
 
     while (1) {
         
         cout << "Enter your latitude: ";
         cin >> gr >> min >> ch;
-        a.cin_La(gr, min, ch);
+        la.cin_data(gr, min, ch);
 
         cout << "Enter your longitude: ";
         cin >> gr >> min >> ch;
-        a.cin_Lo(gr, min, ch);
-        a.cout_data();
+        lo.cin_data(gr, min, ch);
+
+        cout << "Your latitude: ";
+        la.cout_data();
+        cout << endl;
+        cout << "Your latitude: ";
+        lo.cout_data();
+
+        cout << endl << endl;
 
         cout << "Do you whant next? (y/n):  ";
         cin >> ch;
