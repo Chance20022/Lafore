@@ -10,6 +10,9 @@ private:
     int num, den;
 public:
 
+    fraction() : num(0), den(0)
+    {    /*   */    }
+
     void cin_data() {
         char c;
 
