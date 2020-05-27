@@ -147,7 +147,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="fraction.cpp" />
     <ClCompile Include="Task_12.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fraction.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
