@@ -46,7 +46,30 @@ public:
     }
 
     void display() {
-        std::cout << num << "/" << den << std::setfill(' ') << std::setw(6) << " ";
+        int count = 0;
+        int countx = num; //числитель
+
+        while (countx / 10 != 0) {
+            countx = countx / 10;
+            count++;
+        }
+
+        countx = den;
+
+        while (countx / 10 != 0) {
+            countx = countx / 10;
+            count++;
+        }
+
+        count++;
+        count = 7 - count;
+
+        for (int i = 0; i < count; i++) {
+            std::cout << " ";
+        }
+
+        std::cout << num << "/" << den;
+        
     }
 
     void lowterms() {
@@ -76,4 +99,3 @@ public:
         den = den / gcd;
     }
 };
-
