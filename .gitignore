@@ -27,7 +27,6 @@
 *.lib
 
 # Executables
-*.exe
 *.out
 *.app
 *.log
@@ -53,3 +52,6 @@ Chapter 2/Task 3/.vs/Task 3/v16/.suo
 *.sqlite
 *.json
 *.json
+Chapter 7/Task_1/task1.cpp~
+Chapter 7/Task_1/task1.exe
+*.exe
