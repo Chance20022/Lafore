@@ -10,7 +10,6 @@ class money {
 private:
     char stmoney[size];
     long double save[size];
-    int twonum[2];
     int count = 0; //колличество символов 
 public:
 
